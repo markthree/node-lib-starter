@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "test": "vitest",
-    "dev": "esno index.ts",
+    "dev": "esno src/index.ts",
     "test:watch": "vitest --watch",
     "coverage": "vitest --coverage",
     "prepublishOnly": "npm run build",
