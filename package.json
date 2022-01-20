@@ -16,13 +16,14 @@
     "dist"
   ],
   "scripts": {
+    "build": "tsup",
     "test": "vitest",
     "dev": "esno src/index.ts",
+    "play": "esno demo/index.ts",
     "test:watch": "vitest --watch",
     "coverage": "vitest --coverage",
     "prepublishOnly": "npm run build",
-    "build:watch": "npm run build -- --watch src",
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+    "build:watch": "npm run build -- --watch src"
   },
   "keywords": [
     "lib",

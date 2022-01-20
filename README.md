@@ -52,5 +52,11 @@ pnpm dev
 ### publish
 
 ```shell
-pnpm publish
+npm publish
+```
+
+### play
+
+```shell
+pnpm play
 ```
