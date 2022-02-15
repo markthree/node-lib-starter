@@ -49,10 +49,10 @@ pnpm coverage
 pnpm dev
 ```
 
-### publish
+### release
 
 ```shell
-npm publish
+pnpm release
 ```
 
 ### play
@@ -60,3 +60,11 @@ npm publish
 ```shell
 pnpm play
 ```
+
+## License
+
+Made with name
+
+Published under [MIT License](./LICENSE).
+
+<br />
