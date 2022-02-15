@@ -4,7 +4,7 @@
 
 <br />
 
-## features
+## features 🦕
 
 - pnpm 的
 - vitest 测试
@@ -12,8 +12,9 @@
 - typescript 的
 
 <br />
+<br />
 
-## Usage
+## Usage 🦖
 
 ### install
 
@@ -61,10 +62,14 @@ pnpm release
 pnpm play
 ```
 
+<br />
+<br />
+
 ## License
 
-Made with name
+Made with [name](https://github.com/name)
 
 Published under [MIT License](./LICENSE).
+
 
 <br />
