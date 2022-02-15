@@ -1,10 +1,14 @@
 {
   "version": "1.0.0",
-  "name": "node-lib-template",
-  "description": "开箱即用的 node 库模板",
+  "name": "name",
+  "description": "description",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/name/repo.git"
+  },
   "exports": {
     ".": {
       "require": "./dist/index.js",
@@ -23,7 +27,8 @@
     "test:watch": "vitest --watch",
     "coverage": "vitest --coverage",
     "prepublishOnly": "npm run build",
-    "build:watch": "npm run build -- --watch src"
+    "build:watch": "npm run build -- --watch src",
+    "release": "bumpp --commit --push --tag && npm publish"
   },
   "keywords": [
     "lib",
@@ -31,11 +36,19 @@
     "node",
     "utils"
   ],
-  "author": "markthree",
+  "author": {
+    "name": "name",
+    "email": "xx@xx.com",
+    "url": "https://github.com/name"
+  },
+  "bugs": {
+    "email": "xx@xx.com",
+    "url": "https://github.com/name/repo/issues"
+  },
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "@types/node": "^17.0.10",
+    "bumpp": "^7.1.1",
     "c8": "^7.11.0",
     "esno": "^0.14.0",
     "tsup": "^5.11.11",
