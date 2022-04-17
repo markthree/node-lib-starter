@@ -1,58 +1,58 @@
 {
-  "version": "1.0.0",
-  "name": "name",
-  "description": "description",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/name/repo.git"
-  },
-  "exports": {
-    ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsup",
-    "test": "vitest",
-    "dev": "esno src/index.ts",
-    "play": "esno demo/index.ts",
-    "test:watch": "vitest --watch",
-    "coverage": "vitest --coverage",
-    "prepublishOnly": "npm run build",
-    "build:watch": "npm run build -- --watch src",
-    "release": "bumpp --commit --push --tag && npm publish"
-  },
-  "keywords": [
-    "lib",
-    "tool",
-    "node",
-    "utils"
-  ],
-  "author": {
-    "name": "name",
-    "email": "xx@xx.com",
-    "url": "https://github.com/name"
-  },
-  "bugs": {
-    "email": "xx@xx.com",
-    "url": "https://github.com/name/repo/issues"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^17.0.10",
-    "bumpp": "^7.1.1",
-    "c8": "^7.11.0",
-    "esno": "^0.14.0",
-    "tsup": "^5.11.11",
-    "typescript": "^4.5.4",
-    "vitest": "^0.1.23"
-  }
+	"version": "0.0.0",
+	"name": "name",
+	"description": "description",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/name/repo.git"
+	},
+	"exports": {
+		".": {
+			"require": "./dist/index.js",
+			"import": "./dist/index.mjs",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"test": "vitest",
+		"dev": "esno src/index.ts",
+		"play": "esno demo/index.ts",
+		"test:watch": "vitest --watch",
+		"coverage": "vitest --coverage",
+		"prepublishOnly": "npm run build",
+		"build:watch": "npm run build -- --watch src",
+		"release": "bumpp --commit --push --tag && npm publish"
+	},
+	"keywords": [
+		"lib",
+		"tool",
+		"node",
+		"utils"
+	],
+	"author": {
+		"name": "name",
+		"email": "xx@xx.com",
+		"url": "https://github.com/name"
+	},
+	"bugs": {
+		"email": "xx@xx.com",
+		"url": "https://github.com/name/repo/issues"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^17.0.24",
+		"bumpp": "^7.1.1",
+		"c8": "^7.11.0",
+		"esno": "^0.14.1",
+		"tsup": "^5.12.5",
+		"typescript": "^4.6.3",
+		"vitest": "^0.1.27"
+	}
 }
