@@ -22,11 +22,13 @@
 	"scripts": {
 		"build": "tsup",
 		"test": "vitest",
+		"build:esm": "mkdist -d",
 		"dev": "esno src/index.ts",
 		"play": "esno demo/index.ts",
 		"test:watch": "vitest --watch",
 		"coverage": "vitest --coverage",
 		"prepublishOnly": "npm run build",
+		"build:cjs": "mkdist -d --format=cjs",
 		"build:watch": "npm run build -- --watch src",
 		"release": "bumpp --commit --push --tag && npm publish"
 	},
@@ -51,6 +53,7 @@
 		"bumpp": "^7.1.1",
 		"c8": "^7.11.0",
 		"esno": "^0.14.1",
+		"mkdist": "^0.3.10",
 		"tsup": "^5.12.5",
 		"typescript": "^4.6.3",
 		"vitest": "^0.1.27"
