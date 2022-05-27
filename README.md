@@ -1,6 +1,6 @@
 # node-lib-template
 
-开箱即用的 node 库模板
+开箱即用的 `node` 库模板
 
 <br />
 
@@ -27,7 +27,7 @@ pnpm i
 ```shell
 pnpm test
 
-// or pnpm test:watch
+# or pnpm test:watch
 ```
 
 ### build
@@ -35,7 +35,9 @@ pnpm test
 ```shell
 pnpm build
 
-// pnpm build:watch
+# pnpm build:esm 仅打包 esmodule
+# pnpm build:cjs 仅打包 commonjs
+# pnpm build:watch 监听式打包
 ```
 
 ### coverage
