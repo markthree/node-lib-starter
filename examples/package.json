@@ -4,6 +4,6 @@
   "main": "index.js",
   "scripts": {},
   "devDependencies": {
-    "node-lib-template": "workspace:*"
+    "name": "workspace:*"
   }
 }
