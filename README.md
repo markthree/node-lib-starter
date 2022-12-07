@@ -1,4 +1,4 @@
-# node-lib-template
+# node-lib-starter
 
 开箱即用的 `node` 库模板
 
@@ -72,6 +72,5 @@ pnpm play
 Made with [name](https://github.com/name)
 
 Published under [MIT License](./LICENSE).
-
 
 <br />
