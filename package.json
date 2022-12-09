@@ -2,7 +2,7 @@
   "version": "0.0.0",
   "name": "name",
   "description": "description",
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "repository": {
@@ -11,7 +11,7 @@
   },
   "exports": {
     ".": {
-      "require": "./dist/index.js",
+      "require": "./dist/index.cjs",
       "import": "./dist/index.mjs",
       "types": "./dist/index.d.ts"
     }
@@ -20,15 +20,15 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
     "test": "vitest",
+    "build": "unbuild",
     "build:esm": "mkdist -d",
     "dev": "pnpm build:watch",
     "play": "tsx src/index.ts",
     "test:watch": "vitest --watch",
     "coverage": "vitest --coverage",
     "prepublishOnly": "pnpm build",
-    "build:watch": "pnpm build --watch",
+    "build:stub": "pnpm build --stub",
     "build:cjs": "mkdist -d --format=cjs",
     "deps:fresh:major": "npx taze major -w",
     "deps:fresh:minor": "npx taze minor -w",
@@ -52,13 +52,14 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^18.0.0",
+    "@types/node": "^18.11.12",
     "bumpp": "^8.2.1",
-    "c8": "^7.11.3",
-    "mkdist": "^0.3.10",
-    "tsup": "^6.1.2",
-    "tsx": "^3.4.3",
-    "typescript": "^4.7.4",
-    "vitest": "^0.15.1"
+    "c8": "^7.12.0",
+    "mkdist": "^0.3.13",
+    "tsup": "^6.5.0",
+    "tsx": "^3.12.1",
+    "typescript": "^4.9.4",
+    "unbuild": "^1.0.2",
+    "vitest": "^0.15.2"
   }
 }

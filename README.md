@@ -37,7 +37,7 @@ pnpm build
 
 # pnpm build:esm 仅打包 esmodule
 # pnpm build:cjs 仅打包 commonjs
-# pnpm build:watch 监听式打包
+# pnpm build:stub 打包插桩
 ```
 
 ### coverage
