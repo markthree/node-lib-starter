@@ -22,9 +22,9 @@
   "scripts": {
     "test": "vitest",
     "build": "unbuild",
-    "build:esm": "mkdist -d",
     "build:deno": "udeno",
-    "dev": "pnpm build:watch",
+    "build:esm": "mkdist -d",
+    "dev": "pnpm build:stub",
     "play": "tsx src/index.ts",
     "test:watch": "vitest --watch",
     "coverage": "vitest --coverage",
@@ -53,15 +53,15 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^18.11.17",
+    "@types/node": "^18.11.18",
     "bumpp": "^8.2.1",
     "c8": "^7.12.0",
-    "mkdist": "^1.0.0",
+    "mkdist": "^1.1.0",
     "tsup": "^6.5.0",
-    "tsx": "^3.12.1",
+    "tsx": "^3.12.2",
     "typescript": "^4.9.4",
-    "udeno": "^0.3.0",
+    "udeno": "^0.3.5",
     "unbuild": "^1.0.2",
-    "vitest": "^0.26.1"
+    "vitest": "^0.27.1"
   }
 }
