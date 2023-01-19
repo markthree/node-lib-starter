@@ -6,10 +6,11 @@
 
 ## features 🦕
 
-- pnpm 的
-- vitest 测试
-- 开箱即用的
-- typescript 的
+- [pnpm](https://github.com/pnpm/pnpm)
+- [udeno](https://github.com/dishait/udeno)
+- [vitest](https://github.com/vitest-dev/vitest)
+- [unbuild](https://github.com/unjs/unbuild)
+- [TypeScript](https://github.com/microsoft/TypeScript)
 
 <br />
 <br />
@@ -35,9 +36,10 @@ pnpm test
 ```shell
 pnpm build
 
+# pnpm build:stub 打包插桩
+# pnpm build:udeno 打包 deno 包
 # pnpm build:esm 仅打包 esmodule
 # pnpm build:cjs 仅打包 commonjs
-# pnpm build:stub 打包插桩
 ```
 
 ### coverage
@@ -56,6 +58,12 @@ pnpm dev
 
 ```shell
 pnpm release
+```
+
+### play
+
+```shell
+pnpm play
 ```
 
 ### play
